@@ -14,6 +14,8 @@
 		581CDBB329B67393002B1B7C /* CatALogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBB229B67393002B1B7C /* CatALogTests.swift */; };
 		581CDBBD29B67393002B1B7C /* CatALogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBBC29B67393002B1B7C /* CatALogUITests.swift */; };
 		581CDBBF29B67393002B1B7C /* CatALogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBBE29B67393002B1B7C /* CatALogUITestsLaunchTests.swift */; };
+		581CDBCC29B775B8002B1B7C /* BreedParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBCB29B775B8002B1B7C /* BreedParserTest.swift */; };
+		581CDBD029B7797E002B1B7C /* BreedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBCF29B7797E002B1B7C /* BreedParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		581CDBB829B67393002B1B7C /* CatALogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatALogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		581CDBBC29B67393002B1B7C /* CatALogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatALogUITests.swift; sourceTree = "<group>"; };
 		581CDBBE29B67393002B1B7C /* CatALogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatALogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		581CDBCB29B775B8002B1B7C /* BreedParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedParserTest.swift; sourceTree = "<group>"; };
+		581CDBCF29B7797E002B1B7C /* BreedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		581CDBA029B6738E002B1B7C /* CatALog */ = {
 			isa = PBXGroup;
 			children = (
+				581CDBCD29B7794E002B1B7C /* Breeds */,
 				581CDBA129B6738E002B1B7C /* CatALogApp.swift */,
 				581CDBA329B6738E002B1B7C /* ContentView.swift */,
 				581CDBA529B67392002B1B7C /* Assets.xcassets */,
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				581CDBB229B67393002B1B7C /* CatALogTests.swift */,
+				581CDBCB29B775B8002B1B7C /* BreedParserTest.swift */,
 			);
 			path = CatALogTests;
 			sourceTree = "<group>";
@@ -125,6 +131,22 @@
 				581CDBBE29B67393002B1B7C /* CatALogUITestsLaunchTests.swift */,
 			);
 			path = CatALogUITests;
+			sourceTree = "<group>";
+		};
+		581CDBCD29B7794E002B1B7C /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBCE29B77965002B1B7C /* Model */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		581CDBCE29B77965002B1B7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBCF29B7797E002B1B7C /* BreedParser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,7 @@
 			files = (
 				581CDBA429B6738E002B1B7C /* ContentView.swift in Sources */,
 				581CDBA229B6738E002B1B7C /* CatALogApp.swift in Sources */,
+				581CDBD029B7797E002B1B7C /* BreedParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581CDBB329B67393002B1B7C /* CatALogTests.swift in Sources */,
+				581CDBCC29B775B8002B1B7C /* BreedParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
