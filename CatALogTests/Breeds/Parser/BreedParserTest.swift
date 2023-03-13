@@ -13,7 +13,7 @@ final class BreedParserTest: XCTestCase {
 
     func test_WhenJsonNotInCorrectFormat_ThenDecodingErrorThrown() {
         let parser = BreedParser()
-        XCTAssertThrowsError(try parser.parse(json: "{}")) { error in
+        XCTAssertThrowsError(try parser.parse(jsonData: "{}".data(using: .utf8)!)) { error in
             guard case DecodingError.keyNotFound = error else {
                 XCTFail("Error should be DecodingError.keyNotFound not \(error)")
                 return
@@ -23,7 +23,7 @@ final class BreedParserTest: XCTestCase {
 
     func test_WhenAbyssinianBreedReturned_ThenJsonConvertedToStructCorrectly() throws {
         let parser = BreedParser()
-        let abyssinianBreed = try parser.parse(json: abyssinianBreedJson)
+        let abyssinianBreed = try parser.parse(jsonData: abyssinianBreedJson.data(using: .utf8)!)
 
         XCTAssertEqual("abys", abyssinianBreed.id)
         XCTAssertEqual("Abyssinian", abyssinianBreed.name)

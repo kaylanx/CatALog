@@ -11,11 +11,19 @@
 		581CDBA429B6738E002B1B7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBA329B6738E002B1B7C /* ContentView.swift */; };
 		581CDBA629B67392002B1B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581CDBA529B67392002B1B7C /* Assets.xcassets */; };
 		581CDBA929B67392002B1B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581CDBA829B67392002B1B7C /* Preview Assets.xcassets */; };
-		581CDBB329B67393002B1B7C /* CatALogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBB229B67393002B1B7C /* CatALogTests.swift */; };
 		581CDBBD29B67393002B1B7C /* CatALogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBBC29B67393002B1B7C /* CatALogUITests.swift */; };
 		581CDBBF29B67393002B1B7C /* CatALogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBBE29B67393002B1B7C /* CatALogUITestsLaunchTests.swift */; };
 		581CDBCC29B775B8002B1B7C /* BreedParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBCB29B775B8002B1B7C /* BreedParserTest.swift */; };
 		581CDBD029B7797E002B1B7C /* BreedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBCF29B7797E002B1B7C /* BreedParser.swift */; };
+		581CDBD229BCC1E1002B1B7C /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBD129BCC1E1002B1B7C /* Breed.swift */; };
+		581CDBD729BCC239002B1B7C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBD629BCC239002B1B7C /* Parser.swift */; };
+		581CDBDA29BCC2A3002B1B7C /* BreedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBD929BCC2A3002B1B7C /* BreedRepository.swift */; };
+		581CDBDF29BF6775002B1B7C /* DefaultBreedRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBDE29BF6775002B1B7C /* DefaultBreedRepositoryTest.swift */; };
+		581CDBE229BF7660002B1B7C /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBE129BF7660002B1B7C /* Networking.swift */; };
+		581CDBE629BF7717002B1B7C /* MockNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBE529BF7717002B1B7C /* MockNetworking.swift */; };
+		581CDBEA29BF7829002B1B7C /* all-breeds.json in Resources */ = {isa = PBXBuildFile; fileRef = 581CDBE929BF7829002B1B7C /* all-breeds.json */; };
+		581CDBEC29BF7ACF002B1B7C /* DefaultBreedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBEB29BF7ACF002B1B7C /* DefaultBreedRepository.swift */; };
+		581CDBEE29BF7BC4002B1B7C /* URL+TheCatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBED29BF7BC4002B1B7C /* URL+TheCatAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,12 +50,22 @@
 		581CDBA529B67392002B1B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		581CDBA829B67392002B1B7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		581CDBAE29B67393002B1B7C /* CatALogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatALogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		581CDBB229B67393002B1B7C /* CatALogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatALogTests.swift; sourceTree = "<group>"; };
 		581CDBB829B67393002B1B7C /* CatALogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatALogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		581CDBBC29B67393002B1B7C /* CatALogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatALogUITests.swift; sourceTree = "<group>"; };
 		581CDBBE29B67393002B1B7C /* CatALogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatALogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		581CDBCB29B775B8002B1B7C /* BreedParserTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedParserTest.swift; sourceTree = "<group>"; };
 		581CDBCF29B7797E002B1B7C /* BreedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedParser.swift; sourceTree = "<group>"; };
+		581CDBD129BCC1E1002B1B7C /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		581CDBD629BCC239002B1B7C /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		581CDBD929BCC2A3002B1B7C /* BreedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRepository.swift; sourceTree = "<group>"; };
+		581CDBDE29BF6775002B1B7C /* DefaultBreedRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBreedRepositoryTest.swift; sourceTree = "<group>"; };
+		581CDBE129BF7660002B1B7C /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		581CDBE529BF7717002B1B7C /* MockNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworking.swift; sourceTree = "<group>"; };
+		581CDBE929BF7829002B1B7C /* all-breeds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "all-breeds.json"; sourceTree = "<group>"; };
+		581CDBEB29BF7ACF002B1B7C /* DefaultBreedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBreedRepository.swift; sourceTree = "<group>"; };
+		581CDBED29BF7BC4002B1B7C /* URL+TheCatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+TheCatAPI.swift"; sourceTree = "<group>"; };
+		581CDBEF29BF7CD1002B1B7C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		581CDBF029BF7D5C002B1B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +116,14 @@
 		581CDBA029B6738E002B1B7C /* CatALog */ = {
 			isa = PBXGroup;
 			children = (
+				581CDBF029BF7D5C002B1B7C /* Info.plist */,
 				581CDBCD29B7794E002B1B7C /* Breeds */,
+				581CDBD429BCC223002B1B7C /* Core */,
 				581CDBA129B6738E002B1B7C /* CatALogApp.swift */,
 				581CDBA329B6738E002B1B7C /* ContentView.swift */,
 				581CDBA529B67392002B1B7C /* Assets.xcassets */,
 				581CDBA729B67392002B1B7C /* Preview Content */,
+				581CDBEF29BF7CD1002B1B7C /* Config.xcconfig */,
 			);
 			path = CatALog;
 			sourceTree = "<group>";
@@ -118,8 +139,9 @@
 		581CDBB129B67393002B1B7C /* CatALogTests */ = {
 			isa = PBXGroup;
 			children = (
-				581CDBB229B67393002B1B7C /* CatALogTests.swift */,
-				581CDBCB29B775B8002B1B7C /* BreedParserTest.swift */,
+				581CDBDB29BCC2F1002B1B7C /* Breeds */,
+				581CDBE329BF76BF002B1B7C /* Core */,
+				581CDBE729BF77A7002B1B7C /* Resources */,
 			);
 			path = CatALogTests;
 			sourceTree = "<group>";
@@ -136,6 +158,8 @@
 		581CDBCD29B7794E002B1B7C /* Breeds */ = {
 			isa = PBXGroup;
 			children = (
+				581CDBD829BCC289002B1B7C /* Repository */,
+				581CDBD329BCC20C002B1B7C /* Parser */,
 				581CDBCE29B77965002B1B7C /* Model */,
 			);
 			path = Breeds;
@@ -144,9 +168,109 @@
 		581CDBCE29B77965002B1B7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				581CDBCF29B7797E002B1B7C /* BreedParser.swift */,
+				581CDBD129BCC1E1002B1B7C /* Breed.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		581CDBD329BCC20C002B1B7C /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBCF29B7797E002B1B7C /* BreedParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		581CDBD429BCC223002B1B7C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBE029BF764E002B1B7C /* Networking */,
+				581CDBD529BCC22A002B1B7C /* Parser */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		581CDBD529BCC22A002B1B7C /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBD629BCC239002B1B7C /* Parser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		581CDBD829BCC289002B1B7C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBD929BCC2A3002B1B7C /* BreedRepository.swift */,
+				581CDBEB29BF7ACF002B1B7C /* DefaultBreedRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		581CDBDB29BCC2F1002B1B7C /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBDD29BCC31C002B1B7C /* Repository */,
+				581CDBDC29BCC2FD002B1B7C /* Parser */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
+		581CDBDC29BCC2FD002B1B7C /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBCB29B775B8002B1B7C /* BreedParserTest.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		581CDBDD29BCC31C002B1B7C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBDE29BF6775002B1B7C /* DefaultBreedRepositoryTest.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		581CDBE029BF764E002B1B7C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBE129BF7660002B1B7C /* Networking.swift */,
+				581CDBED29BF7BC4002B1B7C /* URL+TheCatAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		581CDBE329BF76BF002B1B7C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBE429BF76C6002B1B7C /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		581CDBE429BF76C6002B1B7C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBE529BF7717002B1B7C /* MockNetworking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		581CDBE729BF77A7002B1B7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBE829BF77B4002B1B7C /* Mocks */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		581CDBE829BF77B4002B1B7C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				581CDBE929BF7829002B1B7C /* all-breeds.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581CDBEA29BF7829002B1B7C /* all-breeds.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,8 +404,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581CDBD229BCC1E1002B1B7C /* Breed.swift in Sources */,
 				581CDBA429B6738E002B1B7C /* ContentView.swift in Sources */,
+				581CDBDA29BCC2A3002B1B7C /* BreedRepository.swift in Sources */,
+				581CDBD729BCC239002B1B7C /* Parser.swift in Sources */,
 				581CDBA229B6738E002B1B7C /* CatALogApp.swift in Sources */,
+				581CDBEE29BF7BC4002B1B7C /* URL+TheCatAPI.swift in Sources */,
+				581CDBE229BF7660002B1B7C /* Networking.swift in Sources */,
+				581CDBEC29BF7ACF002B1B7C /* DefaultBreedRepository.swift in Sources */,
 				581CDBD029B7797E002B1B7C /* BreedParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				581CDBB329B67393002B1B7C /* CatALogTests.swift in Sources */,
+				581CDBE629BF7717002B1B7C /* MockNetworking.swift in Sources */,
+				581CDBDF29BF6775002B1B7C /* DefaultBreedRepositoryTest.swift in Sources */,
 				581CDBCC29B775B8002B1B7C /* BreedParserTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +576,7 @@
 				DEVELOPMENT_TEAM = SR5D6FC58T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatALog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -473,6 +606,7 @@
 				DEVELOPMENT_TEAM = SR5D6FC58T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatALog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
