@@ -21,7 +21,7 @@ final class DefaultBreedRepository: BreedRepository {
     }
 
     func allBreeds() async throws -> [Breed] {
-        let (data, response) = try await networking.data(from: URL.allBreedsUrl)
+        let (data, _) = try await networking.data(from: URL.allBreedsUrl)
         // TODO: response stuff
         return try parser.parse(jsonData: data)
     }
