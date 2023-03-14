@@ -28,6 +28,8 @@
 		581CDBF729BF927A002B1B7C /* MockBreedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBF629BF927A002B1B7C /* MockBreedRepository.swift */; };
 		581CDBFA29BF934D002B1B7C /* Breed+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBF929BF934D002B1B7C /* Breed+TestData.swift */; };
 		581CDBFD29BF95E8002B1B7C /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBFC29BF95E8002B1B7C /* BreedViewModel.swift */; };
+		581CDC0029C088E5002B1B7C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 581CDBFE29C088E3002B1B7C /* LICENSE */; };
+		581CDC0129C088E5002B1B7C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 581CDBFF29C088E4002B1B7C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		581CDBF629BF927A002B1B7C /* MockBreedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreedRepository.swift; sourceTree = "<group>"; };
 		581CDBF929BF934D002B1B7C /* Breed+TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Breed+TestData.swift"; sourceTree = "<group>"; };
 		581CDBFC29BF95E8002B1B7C /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
+		581CDBFE29C088E3002B1B7C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		581CDBFF29C088E4002B1B7C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 		581CDB9529B6738E002B1B7C = {
 			isa = PBXGroup;
 			children = (
+				581CDBFE29C088E3002B1B7C /* LICENSE */,
+				581CDBFF29C088E4002B1B7C /* README.md */,
 				581CDBA029B6738E002B1B7C /* CatALog */,
 				581CDBB129B67393002B1B7C /* CatALogTests */,
 				581CDBBB29B67393002B1B7C /* CatALogUITests */,
@@ -413,7 +419,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581CDC0029C088E5002B1B7C /* LICENSE in Resources */,
 				581CDBA929B67392002B1B7C /* Preview Assets.xcassets in Resources */,
+				581CDC0129C088E5002B1B7C /* README.md in Resources */,
 				581CDBA629B67392002B1B7C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
