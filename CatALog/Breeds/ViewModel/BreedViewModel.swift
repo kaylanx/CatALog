@@ -19,7 +19,7 @@ final class BreedViewModel: ObservableObject {
         self.repository = repository
     }
 
-    func fetchAllBreeds() async throws {
+    @MainActor func fetchAllBreeds() async throws {
         breeds = try await repository.allBreeds()
     }
 }
