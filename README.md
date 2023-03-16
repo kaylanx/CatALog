@@ -31,7 +31,7 @@ The file's contents should be as follows
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-THE_CAT_API_KEY = "YOUR API KEY HERE"
+THE_CAT_API_KEY = YOUR API KEY HERE
 ```
 
 Open the project in Xcode by double-clicking on the `CatALog.xcodeproj` file. Then, connect your iOS device to your Mac and select it as the build target. Finally, press the "Run" button in Xcode to install the app on your device.

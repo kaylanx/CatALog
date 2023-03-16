@@ -23,7 +23,7 @@
 		581CDBE629BF7717002B1B7C /* MockNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBE529BF7717002B1B7C /* MockNetworking.swift */; };
 		581CDBEA29BF7829002B1B7C /* all-breeds.json in Resources */ = {isa = PBXBuildFile; fileRef = 581CDBE929BF7829002B1B7C /* all-breeds.json */; };
 		581CDBEC29BF7ACF002B1B7C /* DefaultBreedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBEB29BF7ACF002B1B7C /* DefaultBreedRepository.swift */; };
-		581CDBEE29BF7BC4002B1B7C /* URL+TheCatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBED29BF7BC4002B1B7C /* URL+TheCatAPI.swift */; };
+		581CDBEE29BF7BC4002B1B7C /* TheCatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBED29BF7BC4002B1B7C /* TheCatAPI.swift */; };
 		581CDBF529BF91B6002B1B7C /* BreedViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBF429BF91B6002B1B7C /* BreedViewModelTest.swift */; };
 		581CDBF729BF927A002B1B7C /* MockBreedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBF629BF927A002B1B7C /* MockBreedRepository.swift */; };
 		581CDBFA29BF934D002B1B7C /* Breed+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDBF929BF934D002B1B7C /* Breed+TestData.swift */; };
@@ -33,6 +33,7 @@
 		581CDC0429C0A5CF002B1B7C /* BreedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC0329C0A5CF002B1B7C /* BreedsView.swift */; };
 		581CDC0829C0A671002B1B7C /* PreviewBreedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC0729C0A671002B1B7C /* PreviewBreedRepository.swift */; };
 		581CDC0B29C0A6BB002B1B7C /* Breed+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC0A29C0A6BB002B1B7C /* Breed+PreviewData.swift */; };
+		581CDC0E29C3551C002B1B7C /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC0D29C3551C002B1B7C /* Print.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,7 @@
 		581CDBE529BF7717002B1B7C /* MockNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworking.swift; sourceTree = "<group>"; };
 		581CDBE929BF7829002B1B7C /* all-breeds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "all-breeds.json"; sourceTree = "<group>"; };
 		581CDBEB29BF7ACF002B1B7C /* DefaultBreedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBreedRepository.swift; sourceTree = "<group>"; };
-		581CDBED29BF7BC4002B1B7C /* URL+TheCatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+TheCatAPI.swift"; sourceTree = "<group>"; };
+		581CDBED29BF7BC4002B1B7C /* TheCatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheCatAPI.swift; sourceTree = "<group>"; };
 		581CDBEF29BF7CD1002B1B7C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		581CDBF029BF7D5C002B1B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		581CDBF429BF91B6002B1B7C /* BreedViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModelTest.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		581CDC0329C0A5CF002B1B7C /* BreedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsView.swift; sourceTree = "<group>"; };
 		581CDC0729C0A671002B1B7C /* PreviewBreedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBreedRepository.swift; sourceTree = "<group>"; };
 		581CDC0A29C0A6BB002B1B7C /* Breed+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Breed+PreviewData.swift"; sourceTree = "<group>"; };
+		581CDC0D29C3551C002B1B7C /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 		581CDBD429BCC223002B1B7C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				581CDC0C29C35506002B1B7C /* Util */,
 				581CDBE029BF764E002B1B7C /* Networking */,
 				581CDBD529BCC22A002B1B7C /* Parser */,
 			);
@@ -262,7 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				581CDBE129BF7660002B1B7C /* Networking.swift */,
-				581CDBED29BF7BC4002B1B7C /* URL+TheCatAPI.swift */,
+				581CDBED29BF7BC4002B1B7C /* TheCatAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -354,6 +357,14 @@
 				581CDC0A29C0A6BB002B1B7C /* Breed+PreviewData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		581CDC0C29C35506002B1B7C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				581CDC0D29C3551C002B1B7C /* Print.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,7 +508,8 @@
 				581CDC0429C0A5CF002B1B7C /* BreedsView.swift in Sources */,
 				581CDBA229B6738E002B1B7C /* CatALogApp.swift in Sources */,
 				581CDBFD29BF95E8002B1B7C /* BreedViewModel.swift in Sources */,
-				581CDBEE29BF7BC4002B1B7C /* URL+TheCatAPI.swift in Sources */,
+				581CDBEE29BF7BC4002B1B7C /* TheCatAPI.swift in Sources */,
+				581CDC0E29C3551C002B1B7C /* Print.swift in Sources */,
 				581CDBE229BF7660002B1B7C /* Networking.swift in Sources */,
 				581CDBEC29BF7ACF002B1B7C /* DefaultBreedRepository.swift in Sources */,
 				581CDC0B29C0A6BB002B1B7C /* Breed+PreviewData.swift in Sources */,
@@ -545,6 +557,7 @@
 /* Begin XCBuildConfiguration section */
 		581CDBC029B67393002B1B7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 581CDBEF29BF7CD1002B1B7C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -605,6 +618,7 @@
 		};
 		581CDBC129B67393002B1B7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 581CDBEF29BF7CD1002B1B7C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

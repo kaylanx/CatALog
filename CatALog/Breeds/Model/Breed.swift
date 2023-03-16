@@ -7,16 +7,7 @@
 
 import Foundation
 
-struct Breed: Decodable, Identifiable {
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case description
-        case lifeSpan = "life_span"
-        case wikipediaURL = "wikipedia_url"
-        case image
-    }
+struct Breed: Identifiable {
 
     let id: String
     let name: String
@@ -29,7 +20,21 @@ struct Breed: Decodable, Identifiable {
         image?.url
     }
 
-    struct Image: Decodable {
-        let url: URL
+    struct Image: Identifiable {
+        let id: String?
+        let url: URL?
     }
 }
+
+extension Breed: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case description
+        case lifeSpan = "life_span"
+        case wikipediaURL = "wikipedia_url"
+        case image
+    }
+}
+
+extension Breed.Image: Decodable { }

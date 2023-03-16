@@ -12,11 +12,26 @@ protocol Networking {
         from url: URL,
         delegate: URLSessionTaskDelegate?
     ) async throws -> (Data, URLResponse)
+
+    func data(
+        for request: URLRequest,
+        delegate: URLSessionTaskDelegate?
+    ) async throws -> (Data, URLResponse)
 }
 
 extension Networking {
+
     func data(from url: URL) async throws -> (Data, URLResponse) {
-        try await data(from: url, delegate: nil)
+        var urlRequest = URLRequest(url: url)
+        urlRequest.addValue(TheCatApi.theCatApiKey, forHTTPHeaderField: "x-api-key")
+
+        print(urlRequest.allHTTPHeaderFields)
+
+        return try await data(for: urlRequest)
+    }
+
+    func data(for request: URLRequest) async throws -> (Data, URLResponse) {
+        try await data(for: request, delegate: nil)
     }
 }
 
