@@ -25,7 +25,7 @@ extension Networking {
         var urlRequest = URLRequest(url: url)
         urlRequest.addValue(TheCatApi.theCatApiKey, forHTTPHeaderField: "x-api-key")
 
-        print(urlRequest.allHTTPHeaderFields)
+        print(urlRequest.allHTTPHeaderFields ?? "No header fields")
 
         return try await data(for: urlRequest)
     }

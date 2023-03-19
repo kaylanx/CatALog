@@ -16,7 +16,7 @@ struct BreedParser: Parser {
 
 struct BreedsParser: Parser {
     func parse(jsonData: Data) throws -> [Breed] {
-        print("Breeds json: \(String(data: jsonData, encoding: .utf8))")
+        print("Breeds json: \(String(data: jsonData, encoding: .utf8) ?? "No JSON")")
         let breeds = try JSONDecoder().decode([Breed].self, from: jsonData)
         return breeds
     }

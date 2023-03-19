@@ -70,7 +70,7 @@ final class BreedViewModelTest: XCTestCase {
 
     func test_WhenErrorOccursFetchingBreeds_ThenStateIsSetToError() async throws {
 
-        var repository = MockBreedRepository()
+        let repository = MockBreedRepository()
         repository.error = MockError.repositoryError
 
         let viewModel = BreedViewModel(
