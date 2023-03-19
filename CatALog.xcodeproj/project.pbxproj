@@ -34,6 +34,7 @@
 		581CDC0829C0A671002B1B7C /* PreviewBreedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC0729C0A671002B1B7C /* PreviewBreedRepository.swift */; };
 		581CDC0B29C0A6BB002B1B7C /* Breed+PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC0A29C0A6BB002B1B7C /* Breed+PreviewData.swift */; };
 		581CDC0E29C3551C002B1B7C /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC0D29C3551C002B1B7C /* Print.swift */; };
+		581CDC1129C73530002B1B7C /* PreviewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581CDC1029C73530002B1B7C /* PreviewError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		581CDC0729C0A671002B1B7C /* PreviewBreedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBreedRepository.swift; sourceTree = "<group>"; };
 		581CDC0A29C0A6BB002B1B7C /* Breed+PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Breed+PreviewData.swift"; sourceTree = "<group>"; };
 		581CDC0D29C3551C002B1B7C /* Print.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		581CDC1029C73530002B1B7C /* PreviewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 		581CDC0529C0A647002B1B7C /* Breeds */ = {
 			isa = PBXGroup;
 			children = (
+				581CDC0F29C73517002B1B7C /* ViewModel */,
 				581CDC0929C0A6A1002B1B7C /* Model */,
 				581CDC0629C0A65A002B1B7C /* Repository */,
 			);
@@ -365,6 +368,14 @@
 				581CDC0D29C3551C002B1B7C /* Print.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		581CDC0F29C73517002B1B7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				581CDC1029C73530002B1B7C /* PreviewError.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,6 +516,7 @@
 				581CDBDA29BCC2A3002B1B7C /* BreedRepository.swift in Sources */,
 				581CDC0829C0A671002B1B7C /* PreviewBreedRepository.swift in Sources */,
 				581CDBD729BCC239002B1B7C /* Parser.swift in Sources */,
+				581CDC1129C73530002B1B7C /* PreviewError.swift in Sources */,
 				581CDC0429C0A5CF002B1B7C /* BreedsView.swift in Sources */,
 				581CDBA229B6738E002B1B7C /* CatALogApp.swift in Sources */,
 				581CDBFD29BF95E8002B1B7C /* BreedViewModel.swift in Sources */,

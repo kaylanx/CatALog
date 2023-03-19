@@ -60,10 +60,29 @@ struct BreedsView: View {
 
 struct BreedsView_Previews: PreviewProvider {
     static var previews: some View {
-        BreedsView(
-            viewModel: BreedViewModel(
-                repository: PreviewBreedRepository()
-            )
-        )
+        let repository = PreviewBreedRepository()
+        let breedsLoadedViewModel = BreedViewModel(repository: repository)
+        let loadingViewModel = BreedViewModel(repository: repository)
+        let pendingViewModel = BreedViewModel(repository: repository)
+        let errorViewModel = BreedViewModel(repository: repository)
+
+        breedsLoadedViewModel.loadingState = .complete(breeds: Breed.allBreeds)
+        loadingViewModel.loadingState = .loading
+        pendingViewModel.loadingState = .pending
+        errorViewModel.loadingState = .error(PreviewError.loadingFailed)
+
+        return Group {
+            BreedsView(viewModel: breedsLoadedViewModel)
+                .previewDisplayName("Breeds returned")
+
+            BreedsView(viewModel: loadingViewModel)
+                .previewDisplayName("Loading state")
+
+            BreedsView(viewModel: pendingViewModel)
+                .previewDisplayName("Pending state")
+
+            BreedsView(viewModel: errorViewModel)
+                .previewDisplayName("Error state")
+        }
     }
 }
