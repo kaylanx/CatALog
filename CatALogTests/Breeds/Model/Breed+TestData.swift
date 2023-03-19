@@ -25,7 +25,7 @@ extension Breed {
             description: "Breed 2 Description",
             lifeSpan: "Breed 2 lifespan",
             wikipediaURL: URL(string: "https://en.wikipedia.org/wiki/Turkish_Van"),
-            image: Image(url: URL(string: "https://cdn2.thecatapi.com/images/sxIXJax6h.jpg")!)
+            image: Image(id: "sxIXJax6h", url: URL(string: "https://cdn2.thecatapi.com/images/sxIXJax6h.jpg")!)
         )
     ]
 }

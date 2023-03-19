@@ -14,6 +14,13 @@ final class MockNetworking: Networking {
     var result = Result<Data, Error>.success(Data())
 
     func data(
+        for request: URLRequest,
+        delegate: URLSessionTaskDelegate?
+    ) async throws -> (Data, URLResponse) {
+        try (result.get(), URLResponse())
+    }
+
+    func data(
         from url: URL,
         delegate: URLSessionTaskDelegate?
     ) async throws -> (Data, URLResponse) {

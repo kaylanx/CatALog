@@ -9,21 +9,29 @@ import SwiftUI
 
 struct BreedsView: View {
 
-    @ObservedObject private var viewModel: BreedViewModel
+    @StateObject private var viewModel: BreedViewModel
 
     init(viewModel: BreedViewModel = BreedViewModel()) {
-        self.viewModel = viewModel
+        self._viewModel = StateObject(wrappedValue: viewModel)
     }
 
     var body: some View {
-        List {
-            ForEach(viewModel.breeds) { breed in
-                cell(for: breed)
+        Group {
+            switch viewModel.loadingState {
+                case .complete(let breeds) :
+                    List {
+                        ForEach(breeds) { breed in
+                            cell(for: breed)
+                        }
+                    }
+                case .pending, .loading:
+                    ProgressView()
+                case .error(let error):
+                    Text("Oops! Something went wrong \(error.localizedDescription)")
             }
         }
         .task {
-            // TODO: Error handling
-            try? await viewModel.fetchAllBreeds()
+            await viewModel.fetchAllBreeds()
         }
     }
 

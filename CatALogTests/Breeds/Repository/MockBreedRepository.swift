@@ -9,15 +9,23 @@ import Foundation
 
 @testable import CatALog
 
+enum MockError: Error {
+    case repositoryError
+}
+
 final class MockBreedRepository: BreedRepository {
 
     private var breeds: [Breed]
+    var error: Error?
 
     init(breeds: [Breed] = Breed.allBreeds) {
         self.breeds = breeds
     }
 
     func allBreeds() async throws -> [Breed] {
-        breeds
+        if let error {
+            throw error
+        }
+        return breeds
     }
 }
